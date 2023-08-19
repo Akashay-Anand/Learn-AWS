@@ -8,6 +8,10 @@ With IAM, you can share access to an AWS account and resources without having to
 * IAM supports MFA.
 *IAM supports identity federation, which allows users who already have passwords elsewhere—for example, in your corporate network or with an internet identity provider—to get temporary access to your AWS account.
 
+### USE IAM APPROPRIATELY
+
+IAM is used to secure access to your AWS account and resources. It simply provides a way to create and manage users, groups, and roles to access resources within a single AWS account. IAM is not used for website authentication and authorization, such as providing users of a website with sign-in and sign-up functionality. IAM also does not support security controls for protecting operating systems and networks.
+
 
 ### WHAT IS AN IAM GROUP?
 > An IAM group is a collection of users.   
@@ -87,6 +91,19 @@ c) The way you grant permissions in IAM is by using IAM "policies".__
 
 
 
+<br/>
+<br/>
+
+# Role Based Access in AWS
+> Maintaining roles is easier than maintaining users.     
+> When you assume a role, IAM dynamically provides temporary credentials that expire after a defined period of time, between 15 minutes and 36 hours.  
+
+> 
+
+
+
+<br/>
+<br/>
 <br/>
 <br/>
 ## Resources
