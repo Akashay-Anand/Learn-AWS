@@ -15,23 +15,7 @@
 
 __[Note]:__ Amazon Web Services (AWS), you don't typically work with a hypervisor directly like you might in a traditional virtualization environment. Instead, In AWS, when you launch an EC2 (Elastic Compute Cloud) instance, you are creating a virtual machine, but you don't interact with the hypervisor directly. AWS handles the hypervisor layer and provides you with a variety of instance types that offer different levels of CPU, memory, and other resources.
 
-# EC2 (Amazon Elastic Compute Cloud)
 
-> It is a cloud computing service that provides resizable compute capacity in the cloud. With EC2, you can launch as many or as few virtual machines (VMs) as you need, and scale them up or down as your needs change. You can also customize your VMs with the operating system, storage, and networking that you need.
-* EC2 is a pay-as-you-go service, so you only pay for the resources that you use.
-
-### EC2 is a popular choice for a variety of workloads, including:
-* Web servers
-* Database servers
-* Application servers
-* Development and testing environments
-* High-performance computing (HPC)
-* Machine learning
-
-<br/>
-
-> When you launch an EC2 instance in AWS, you're essentially creating a virtual machine
-> Each instance is backed by the AWS infrastructure, including the hypervisor layer, but you don't need to interact with the hypervisor itself.
 
 <hr/>
 <hr/>
@@ -65,7 +49,25 @@ The Nitro Hypervisor is a lightweight, high-performance hypervisor developed by 
 <hr/>
 <hr/>
 
-## Overall Concept
+# EC2 (Amazon Elastic Compute Cloud)
+
+> It is a cloud computing service that provides resizable compute capacity in the cloud. With EC2, you can launch as many or as few virtual machines (VMs) as you need, and scale them up or down as your needs change. You can also customize your VMs with the operating system, storage, and networking that you need.
+* EC2 is a pay-as-you-go service, so you only pay for the resources that you use.
+
+### EC2 is a popular choice for a variety of workloads, including:
+* Web servers
+* Database servers
+* Application servers
+* Development and testing environments
+* High-performance computing (HPC)
+* Machine learning
+
+<br/>
+
+> When you launch an EC2 instance in AWS, you're essentially creating a virtual machine
+> Each instance is backed by the AWS infrastructure, including the hypervisor layer, but you don't need to interact with the hypervisor itself.
+
+### Overall Concept
 
 > A virtual machine can often be the easiest compute option in AWS to understand. This is because a virtual machine emulates a physical server and allows you to install an HTTP server to run your applications.
 
@@ -73,4 +75,52 @@ The Nitro Hypervisor is a lightweight, high-performance hypervisor developed by 
 
 > In AWS, these virtual machines are called Amazon Elastic Compute Cloud or Amazon EC2. Behind the scenes, AWS operates and manages the host machines and the hypervisor layer. AWS also installs the virtual machine operating system, called the guest operating system
 
-> Some AWS compute services use Amazon EC2 or use virtualization concepts under the hood.  
+> Some AWS compute services use Amazon EC2 or use virtualization concepts under the hood.
+
+<hr>
+
+## EC2 Configuration
+
+> We can create and manage EC2 instances through the AWS Management Console, the AWS Command Line Interface (CLI), AWS Software Development Kits (SDKs), or through automation tools and infrastructure orchestration services. In order to create an EC2 instance, you need to define:
+
+* Hardware specifications, like CPU, memory, network, and storage.
+* Logical configurations, like networking location, firewall rules, authentication, and the operating system of your choice.
+
+When launching an EC2 instance, the first setting we configure is the operating system.(selecting an Amazon Machine Image (AMI)).
+
+<br/>
+
+### What Is an AMI?
+> AMI let you configure which operating system you want, you can also select storage mappings, the architecture type (such as 32-bit, 64-bit, or 64-bit ARM), and additional software installed.
+
+> EC2 instances are live instantiations of what is defined in an AMI, much like a cake is a live instantiation of a cake recipe
+
+> One advantage of using AMIs is that they are reusable.
+
+Q) _If you wanted to create a second EC2 instance with the same configurations, how can you easily do that?_   
+> create an AMI from your running instance and use this AMI to start a new instance. This way, your new instance will have all the same configurations as your current instance, because the configurations set in the AMIs are the same.
+
+ <img width="764" alt="image" src="https://github.com/Akashay-Anand/Learn-AWS/assets/82114930/d8a86f52-a7a7-4a4c-896b-33551372a484">
+
+<br/>
+> AMI Catalog
+
+> <img width="884" alt="image" src="https://github.com/Akashay-Anand/Learn-AWS/assets/82114930/1252eed4-4efb-4d21-91c4-88e88a60408e">
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<hr/>
+
+### Resources
+
+* https://aws.amazon.com/ec2/
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html
+* https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html
+
