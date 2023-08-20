@@ -77,7 +77,25 @@ The Nitro Hypervisor is a lightweight, high-performance hypervisor developed by 
 
 > Some AWS compute services use Amazon EC2 or use virtualization concepts under the hood.
 
-<hr>
+<hr/>
+
+### EC2 Instance Lifecycle
+> An EC2 instance transitions between different states from the moment you create it all the way through to its termination
+
+> <img width="872" alt="image" src="https://github.com/Akashay-Anand/Learn-AWS/assets/82114930/a54e67e9-27f6-4bc7-abcd-09ecf3590b50">
+
+Q) Where Does Your EC2 Instance Live?
+> By default, your EC2 instances are placed in a network called the default Amazon Virtual Private Cloud (VPC). This network was created so that you can easily get started with Amazon EC2 without having to learn how to create and configure a VPC. any resource you put inside the default VPC will be public and accessible by the internet,     
+
+Q) What Is the Difference Between Stop and Stop-Hibernate?
+> When you stop your instance, the data stored in memory (RAM) is lost. When you stop-hibernate your instance, AWS signals the operating system to perform hibernation (suspend-to-disk), which saves the contents from the instance memory (RAM) to the Amazon EBS root volume.    
+
+> When you stop your instance, it enters the stopping state, and then the stopped state. AWS does not charge usage or data transfer fees for your instance after you stop it, but storage for any Amazon EBS volumes is still charged. While your instance is in the stopped state, you can modify some attributes, like the instance type.
+
+
+
+
+<hr/>
 
 ## EC2 Configuration
 
@@ -123,4 +141,13 @@ Q) _If you wanted to create a second EC2 instance with the same configurations, 
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html
 * https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html
+* https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc.html
+* https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html
+
+*https://aws.amazon.com/ec2/pricing/
+* https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/
+* https://aws.amazon.com/ec2/spot/pricing/
+* https://aws.amazon.com/ec2/pricing/on-demand/
 
