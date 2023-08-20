@@ -62,3 +62,15 @@ The Nitro Hypervisor is a lightweight, high-performance hypervisor developed by 
 
 > The Nitro Hypervisor is part of AWS's continuous effort to optimize the performance and capabilities of its cloud services. As AWS services evolve, the Nitro System and its components play a crucial role in delivering efficient, secure, and scalable infrastructure to customers.
 
+<hr/>
+<hr/>
+
+## Overall Concept
+
+> A virtual machine can often be the easiest compute option in AWS to understand. This is because a virtual machine emulates a physical server and allows you to install an HTTP server to run your applications.
+
+> To run these virtual machines, you install a hypervisor on a host machine. This hypervisor provisions the resources to create and run your virtual machines.
+
+> In AWS, these virtual machines are called Amazon Elastic Compute Cloud or Amazon EC2. Behind the scenes, AWS operates and manages the host machines and the hypervisor layer. AWS also installs the virtual machine operating system, called the guest operating system
+
+> Some AWS compute services use Amazon EC2 or use virtualization concepts under the hood.  
