@@ -34,3 +34,59 @@ __> OverView__
 # AWS Compute services
 <img width="281" alt="image" src="https://github.com/Akashay-Anand/Learn-AWS/assets/82114930/c92cd806-5582-451e-ab88-4ae2a46e5d51">
 
+<hr>
+
+## Choose the Right Compute Option
+
+> We have many compute options. You need to know which service to use for which use case.
+
+> At a fundamental level, there are three types of compute options:     
+1. __virtual machines__,  
+2. __container services__,  
+3. __serverless__.   
+
+<br/>
+<hr/>
+
+1.  __virtual machine__
+> A _virtual machine_ can often be the easiest compute option in AWS to understand. This is because a virtual machine emulates a physical server and allows you to install an HTTP server to run your applications.    
+> these virtual machines are called Amazon Elastic Compute Cloud or Amazon __EC2__
+
+ <hr/>
+
+ 2. __container services__
+
+> A container is a standardized unit that packages up your code and all of its dependencies. This package is designed to run reliably on any platform, because the container creates its own independent environment. This makes it easy to carry workloads from one place to another,
+> 
+
+Q) THE DIFFERENCE BETWEEN CONTAINERS AND VMS?
+* Containers share the same operating system and kernel as the host they exist on, whereas virtual machines contain their operating system.
+* Since each virtual machine has to maintain a copy of an operating system, there’s a degree of wasted space. A container is more lightweight. They spin up quicker, almost instantly. This difference in startup time becomes instrumental when designing applications that need to scale quickly during input/output (I/O) bursts.
+* While containers can provide speed, virtual machines offer you the full strength of an operating system and offer more resources, like package installation, a dedicated kernel, and more.
+
+<img width="572" alt="image" src="https://github.com/Akashay-Anand/Learn-AWS/assets/82114930/9f73f2ec-d949-47dc-bcee-b16733dd5055">
+
+<br/>
+
+> AWS offers two container orchestration services: Amazon Elastic Container Service __(ECS)__ and Amazon Elastic Kubernetes Service __(EKS)__.
+
+
+<hr/>
+
+<br/>
+<br/>
+<br/>
+
+
+
+<br/>
+<br/>
+<br/>
+
+### Resources 📑
+
+* https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html
+* https://aws.amazon.com/products/compute/
+* https://aws.amazon.com/blogs/compute/
+
+
