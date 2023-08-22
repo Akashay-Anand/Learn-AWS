@@ -70,8 +70,24 @@ Q) THE DIFFERENCE BETWEEN CONTAINERS AND VMS?
 
 > AWS offers two container orchestration services: Amazon Elastic Container Service __(ECS)__ and Amazon Elastic Kubernetes Service __(EKS)__.
 
+<hr/>
+
+3. __Serverless__
+
+> serverless mentions four aspects.
+
+* No servers to provision or manage.
+* Scales with usage.
+* You never pay for idle resources.
+* Availability and fault tolerance are built-in.
+
+
+> I like to think of AWS services as existing on a spectrum. On one side of the spectrum, you have convenience and on the other side, you have control. Many services exist to give you control like Amazon EC2 whereas other services exist to give you convenience, like the serverless compute AWS Lambda.
 
 <hr/>
+
+
+
 
 <br/>
 <br/>
