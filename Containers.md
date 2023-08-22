@@ -32,6 +32,19 @@ This coordination is handled by a container orchestration service. AWS offers tw
 
 >   
 
+2. __USE KUBERNETES WITH AMAZON ELASTIC KUBERNETES SERVICE (AMAZON EKS)__
 
+> Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services. By bringing software development and operations together by design, Kubernetes created a rapidly growing ecosystem that is very popular and well established in the market.If you already use Kubernetes, you can use Amazon EKS to orchestrate these workloads in the AWS Cloud.Amazon EKS is conceptually similar to Amazon ECS, but there are some differences.
 
+* An EC2 instance with the ECS Agent installed and configured is called a container instance. In Amazon EKS, it is called a worker node.
+* An ECS Container is called a task. In the Amazon EKS ecosystem, it is called a pod.
+* While Amazon ECS runs on AWS native technology, Amazon EKS runs on top of Kubernetes.
 
+> If you have containers running on Kubernetes and want an advanced orchestration solution that can provide simplicity, high availability, and fine-grained control over your infrastructure, Amazon EKS is the tool for you.
+
+<hr/>
+
+[Note]:
+* ECS or EKS is the container orchestrator. This is the tool that is managing the container's lifecycle.
+* ECS and EKS run containers on clusters of EC2 instances. And in that case, you were using EC2 as the compute platform for your containers,
+* 
