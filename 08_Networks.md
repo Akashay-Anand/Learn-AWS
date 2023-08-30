@@ -1,7 +1,6 @@
 # Networking
 
 
-
 Q)  What is networking:
 
 - Networking is how you connect computers around the world and allow them to communicate with one another.
@@ -69,16 +68,65 @@ if we look at the details of address. Each address must contain information such
 
 *[Note]* When working with networks **in the AWS Cloud**, you choose your network size by using CIDR notation. In AWS, the **smallest IP range** you can have is /28, which **provides you 16 IP** addresses. The **largest IP range** you can have is a /16, which **provides you with 65,536** IP addresses. 
 
+*[Note]:* **Reserved IPs**
+- AWS reserves five IP addresses in each subnet. These IP addresses are used for routing, Domain Name System (DNS), and network management. 
+- ![Alt text](/assets/ip-reserved.png)
+- For example, consider a VPC with the IP range 10.0.0.0/22. The VPC includes 1,024 total IP addresses. This is divided into four equal-sized subnets, each with a /24 IP range with 256 IP addresses. Out of each of those IP ranges, there are only 251 IP addresses that can be used because AWS reserves five.  
+
+
 <br>
 <br>
 <br>
 
-![Alt text](assets/image.png)
+ ![Alt text](assets/vpc_overall.png)
 
 # VPC 
 
 A VPC in AWS creates a boundary where your applications and resources are isolated from any outside movement,
 so nothing comes into the VPC and nothing comes out of the VPC without your explicit permission.
+
+
+> A VPC is an isolated network you create in the AWS cloud. When you create a VPC, you need to choose three main things.
+> - The name of your VPC.
+
+> - A IP range for your VPC in CIDR notation. This determines the size of your network. Each VPC can have up to four /16 IP ranges.
+
+> - A Region for your VPC to live in. Each VPC spans multiple Availability Zones within the Region you choose.
+> - Example VPC Coverage . ![Alt text](assets/VPC-Region.png)
+
+#### to create VPC, 
+* login to console
+* go to VPC page by searching it.
+* click on create vpc. then provide name, CIDR and etc. 
+* click create. done.
+* ![Alt text](assets/vpc_console.png)
+
+
+## Subnets in VPC 
+> it is small section inside VPC, that can have different set of rules like the can be exposed to internet or can be private.
+
+> Think of subnets as smaller networks inside your base network. 
+
+> subnets are used for high availability and providing different connectivity options for your resources. When you create a subnet, you need to choose three settings.
+> - The VPC you want your subnet to live in, in this case VPC (10.0.0.0/16).
+
+> - The Availability Zone you want your subnet to live in, in this case AZ1.
+
+> - A CIDR block for your subnet, which must be a subset of the VPC CIDR block, in this case 10.0.0.0/24.
+> Ex: ![Alt text](assets/vpc_subnet.png)
+
+
+*[Note:]* When you launch an EC2 instance, you launch it inside a subnet, which will be located inside the Availability Zone you choose.  
+
+
+#### High Availability with A VPC 
+> When you create your subnets, keep high availability in mind. In order to maintain redundancy and fault tolerance, create at least two subnets configured in two different Availability Zones.   
+
+> it’s important to consider that “everything fails all the time.” In this case, if one of these AZs fail, you still have your resources in another AZ available as backup.   
+
+
+
+
 
 
 <br>
