@@ -124,8 +124,9 @@ so nothing comes into the VPC and nothing comes out of the VPC without your expl
 
 > it’s important to consider that “everything fails all the time.” In this case, if one of these AZs fail, you still have your resources in another AZ available as backup.   
 
+<br>
 
-
+# Gateway
 
 
 
@@ -143,6 +144,7 @@ Ans:
 - commonly applied in scenarios where you have multiple instances, resources, and subnets within a network.
 - 
 
+Q) How o devide IP in subnets 
 
 #### Resources
 
