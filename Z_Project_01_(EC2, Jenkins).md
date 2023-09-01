@@ -27,12 +27,50 @@ Details:
 
 ![Alt text](/assets/p01_all_instance.png)
 
+<hr>
+
+[Note]: Instance is not accessible to the exxternal pointer by defoult. 
+- so we need to edit Inbound rules 
+- open security group
+- ![Alt text](/assets/p01_sg.png)
+- click on Edit Inbound rules > add rules with 8080 port
+- ![Alt text](/assets/p01_inbound_rule.png)
+
+<hr>
+
 ### Step 2: connect to instance from powershell
 
 - navigate to CONNECT option from top menu on instance page; go to 'SSH client' tab and copy SSH command ; this 
-- 
+- open terminal in same location as where 'keypair' file is downloaded. 
+- execute SSH command (copyed from SSH Client); 
+- enter 'yes' for any prompt.
+- Output will look like this; 
+ ![Alt text](/assets/p01_cli_login.png)
 
+<hr>
 
+### Step 3: follow the bellow link to install Jenkins in in EC2 instance. 
+[Note] No need of installing 'PuTTY' ; directly run command in the terminal where I/You have login ;
+
+> Now follow these steps to install JENKINS.
+> - https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/#downloading-and-installing-jenkins
+
+- Check the status of Jenkins
+![Alt text](/assets/p01_jenkins_status.png)
+
+<hr>
+
+### Step 4: Run project (Done) 👨‍💻🤖
+- http://<your_server_public_DNS>:8080
+- in my case it is: http://3.110.169.54:8080/
+
+- Output: Jenkins Application will be running there.
+ ![Alt text](/assets/p01_output1.png) 
+- can take password from the provided address: used 'cat' ; then logined in to jenkins with that password.
+- ![Alt text](/assets/p01_output2.png)
+  
+
+<br>
 
 // Basic linux Command /////////////////////
 
@@ -63,4 +101,10 @@ Q) if using windows termninal or git bash for cli access of any instance
 > Now follow these steps to install JENKINS.
 > - https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/#downloading-and-installing-jenkins
 >
-> 
+
+
+//
+<br>
+<br>
+## Finished 🧑🏻‍💻. 
+[Note]: for any queries mail at: akashayanand1@gmail.com 
