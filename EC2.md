@@ -41,7 +41,7 @@ Elastic Cloud Compute **"Practical"**
 - ![Alt text](image.png)
 - keep it safe
 
-
+ 
 
 <br> 
 
@@ -62,7 +62,9 @@ Elastic Cloud Compute **"Practical"**
 - open terminal in same file where you have stored <key.pem> file.
 - 
 - ssh -i <"pem file name with extension"> ec2-user@ec2-< public-ip >.< region >.compute.amazonaws.com
-  
+  (This command can be found in 'connect to instance' page in AWS);
+
+
 <br/>
 <hr/>
 <hr/>
