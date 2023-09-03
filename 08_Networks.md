@@ -130,6 +130,38 @@ so nothing comes into the VPC and nothing comes out of the VPC without your expl
 
 
 
+### Internet Gateway 
+- To enable internet connectivity for your VPC, you need to create an internet gateway. Think of this gateway as similar to a modem. Just as a modem connects your computer to the internet, the internet gateway connects your VPC to the internet.
+
+###  virtual private gateway or VGW.
+- allows you to connect your AWS VPC to another private network. Once you create and attach a VGW to a VPC, the gateway acts as anchor on the AWS side of the connection
+
+
+<br>
+<hr/> <hr/>
+<br>
+
+# Amazon VPC Routing and Security
+
+- When you create a VPC, AWS creates a route table called the **main route table**. A route table contains a set of rules, called routes, that are used to determine where network traffic is directed. AWS assumes that when you create a new VPC with subnets, you want traffic to flow between them. Therefore, the default configuration of the main route table is to allow traffic between all subnets in the local network.
+
+- If you associate a custom route table with a subnet, the subnet will use it instead of the main route table. By default, each custom route table you create will have the local route already inside it, allowing communication to flow between all resources and subnets inside the VPC. 
+
+- ![Alt text](image-1.png)
+
+
+## Secure Your Subnets with Network ACLs
+
+> Think of a network ACL as a firewall at the subnet level. A network ACL enables you to control what kind of traffic is allowed to enter or leave your subnet. You can configure this by setting up rules that define what you want to filter.
+>
+
+## Secure Your EC2 Instances with Security Groups
+> The next layer of security is for your EC2 Instances. Here, you can create a firewall called a security group. The default configuration of a security group blocks all inbound traffic and allows all outbound traffic.  
+
+
+
+
+
 <br>
 <br>
 <br>
