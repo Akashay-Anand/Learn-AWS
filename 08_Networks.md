@@ -150,6 +150,7 @@ so nothing comes into the VPC and nothing comes out of the VPC without your expl
 - ![Alt text](image-1.png)
 
 
+
 ## Secure Your Subnets with Network ACLs
 
 > Think of a network ACL as a firewall at the subnet level. A network ACL enables you to control what kind of traffic is allowed to enter or leave your subnet. You can configure this by setting up rules that define what you want to filter.

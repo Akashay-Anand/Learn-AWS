@@ -57,7 +57,11 @@ Elastic Cloud Compute **"Practical"**
 - in instance configuration there is two IP available 'Public ip' and 'Private ip' (make sure the instance is in running state).
 - 'public key' use to connect from remote device. Ex. using SSH.
 
-**TO access it from cli use this command**
+**TO access it from Windows:**
+
+Tools: PuTTY, Mobaxterm , cli, git 
+
+> **cli use this command**
 
 - open terminal in same file where you have stored <key.pem> file.
 - 
