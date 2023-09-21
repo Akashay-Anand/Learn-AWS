@@ -5,20 +5,28 @@
 > - Hypervisor
 > - Servers
 > - User (Authentication, Authorization)
-> - IAM 
+> -  IAM 
 > - Compute as a Service
-> - EC2
-> - Containers (EKS, ECS, Docker)
-> - Serverless (Lambda)
+> -  EC2
+> -  Containers (EKS, ECS, Docker)
+> -  Serverless (Lambda)
+> - Networking
+> -  VPC
+> 
 
 <br> 
 
 > ### Topics in progress
-> - Networking
-> - VPC
-
+> Storage
 
 <hr/>
+<hr/>
+
+# AWS Certificate
+
+![Alt text](/assets/my_certificate.png)
+
+
 <hr/>
 
 # Build Projects with AWS
@@ -47,3 +55,8 @@
 - *Technologies Used*: AWS (ECR, Boto3, etc.) Python (Flask, psutil), Docker,
 - It shows CPU and memory status of the system with proper messages.
 - In this Project: created monitoring app using Flask, containerised it with docker and hosted on aws elastic container, deployed on kube.
+
+## 3. Hosted Portfolio on AWS
+- Hosted Portfolio website of AWS S3 .
+- https://portfolio-anand.s3.ap-south-1.amazonaws.com/index.html
+
